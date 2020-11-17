@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Créer un site dynamique avec JavaScript</title>
+    <link rel="stylesheet" href="css/article1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+ 
+</head>
+<body>
+    <header>
+        <nav id="nav_bar" class="center">
+            <h3><a href="index.html"><'/WCd></a></h3>
+            <button class="bouton"><i class="fas fa-bars"></i></button>
+        </nav>
+        <!-- la 1 class sert a donner le style css et la 2 est pour cacher le menu ou l'afficher  -->
+        <div class="modalMenu afficheMenu" >
+            <!-- listMenu pour le style css de 1 menu et styleMenu donne le style generale pour le menu et sousMenu -->
+            <ul class ="listMenu styleList">
+                <li><a href="index.html">Accueil</a></li>
+    
+                <li class="elementSousMenu ">Recherche <i class="fas fa-caret-down"></i>
+                    <form class=" my-2 my-lg-0 center afficheSousm afficheMenu" >
+                        <input  class="form-control mr-sm-2 " type="search" placeholder="Mot clé . . ." aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0   bouton" type="submit"><i class="fas fa-search"></i></button>
+                      </form>
+                </li>
+                <li class="elementSousMenu2 ">Articles <i class="fas fa-caret-down"></i> 
+                    <ul class="sousMenu styleList afficheSousm2 afficheMenu">
+                        <li><a href="article1.html">Web culture</a> </li>
+                        <li><a href="article2.html">Languages</a></li>
+                        <li><a href="article3.html">Frameworks</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">à Propos</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <h5 class="card-title">Créer un site dynamique avec JavaScript</h5>
+        <div class="card col" style="width: 18rem;">
+            <div style="position: relative;"><img class="card-img-top" src="img/img (2).jpg" alt="Card image cap">
+            <h4 class="styleViolet avatar"><'/WCd></h4></div>
+            <div class="card-body">
+            <h6>publié Le 11/09/2020</h6>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat quo maiores excepturi reprehenderit iusto quam laboriosam dignissimos ratione corrupti temporibus, commodi facilis harum eaque exercitationem? Tempore nostrum, laborum et aut neque asperiores magni eos voluptatum, est odit ad ipsum ab reiciendis enim officiis maiores debitis natus dolor adipisci explicabo voluptatibus. Vero pariatur iure veritatis, porro, laboriosam praesentium repellendus quia illum harum excepturi minus recusandae optio eos id culpa tempora voluptas nostrum nobis? Illum consectetur enim et nobis totam rem voluptatem hic alias magni quidem eveniet, quam aliquam repudiandae eaque placeat obcaecati facere, eos dignissimos quo. Incidunt dolorum veniam perferendis nobis.</p>
+            
+            </div>
+        </div>
+    </main>
+
+
+
+
+
+
+
+
+    <footer>
+        <ul class="bar-top-left-reseaux center">
+            <li><a href=""><i class="fab fa-twitter"></i></a></li>
+            <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href=""><i class="fab fa-instagram"></i></a></li>
+            <li><a href=""><i class="fab fa-youtube"></i></a></li>
+        </ul>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+    
+</body>
+</html>

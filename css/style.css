@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Poppins:wght@400;600;700&display=swap');
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+header{
+    margin: 0;
+    padding: 0;
+}
+/* ---le bar le navigation --- */
+.center {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#nav_bar {
+    margin: 0;
+    background-color:#f2594b ;
+    color: #fff;
+    padding: 1em 0em;
+    border-bottom: 2px solid #f2594b;
+}
+#nav_bar h3 a{
+    color: #fff;
+}
+/* ------menu burger ------ */
+#nav_bar  button  i {
+    color: #fff !important;
+}
+.bouton {
+    background-color: transparent !important;
+    border: none !important;
+    color: #fff !important;
+    font-size: 1.8em;
+} 
+/* -------la fenetre de menu qui s'affiche  */
+
+.modalMenu {/* -----------------ce que va s'afficher */
+    width: 250px;
+    height: 120vh;
+    position: absolute;
+    top: 0;
+    margin: 0px auto;
+    z-index: 100;
+    
+}
+/* ------les elements de menu  */
+.listMenu {
+    background-color:rgba(242, 89, 75, 0.7) ;
+    border: 1px solid rgba(242, 89, 75, 0.7) ;
+    border-radius: 0 0 10px 10px;
+    position: absolute;
+    width: 250px;
+    height: auto;
+    top: 70px;
+    left:12vw;
+    
+}
+/* ----le style de lists et sous-lists----- */
+.styleList{
+    list-style: none;
+    margin: 0 ;
+    padding:1px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+}
+/* ------les liens de menu ----- */
+.styleList li a {
+    color: #fff;
+    padding:  0px 3em ;
+
+}
+.styleList li {
+    margin: 10px 0;
+}
+/* -------le sous-menu des articles ------- */
+.sousMenu {/* -----------------ce que va s'afficher */
+    background-color: #fff;
+    
+   
+}
+.sousMenu li a {
+    color: #f2594b;
+}
+/* --------forcer un style pour la bar de recherche ----  */
+
+.afficheMenu {
+    display: none;
+}
+/* ---mettre les cards dans une gride ----- */
+main {
+    margin: 10px 15px;
+    padding: 0;
+}
+.intro h1 {
+    font-size: 40px;
+    margin-top: 40px;
+    color: #421028;
+    /* font-weight: 700; */
+}
+.styleH2{
+    border-radius: 5px;
+    width: 7em;
+    font-size: 20px;
+    margin:5px auto 20px !important;
+}
+.styleViolet{
+    background-color: #421028;
+    border: 1px solid #421028;
+    color: #fff ;
+    padding: 10px;
+    text-align: center;
+}
+.avatar{
+    margin:5px auto !important;
+    border-radius: 50%;
+    font-size: 16px;
+    position: absolute;
+    top: 8em;
+}
+.card-body h6{
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.8);
+}
+main div {
+    margin-bottom: 20px;
+    border: none;
+}
+
+footer {
+    background-color:#f2594b ;
+    margin-bottom: 0px;
+    
+}
+.bar-top-left-reseaux {
+  list-style: none;
+  background-color:#f2594b ;
+  padding: 35px 20px;
+  margin-bottom: 0px;
+    
+}
+footer ul li a  {
+    color: #f2594b;
+    background-color: #fff;
+    padding: 5px 8px;
+    border: 1px solid #f2594b ;
+    border-radius: 50%;
+}
+.boutonMore{
+    background-color:#f2594b !important ;
+    border: 1px solid #f2594b !important;
+}
+/* ---------------modal de bienvenue--------- */
+ #main { 
+     width: 100%;
+    height: 100%;
+    background:rgba(255, 255, 255,0.8);
+    position: absolute;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+
+
+}
+#pop-up {
+    width: 280px;
+    height: 255px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 20px;
+    z-index: 25;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} 
